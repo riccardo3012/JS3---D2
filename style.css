@@ -5,7 +5,7 @@ body {
   color: navy;
   font-size: 30px;
   font-weight: 700;
-  border: solid 2px;
+  border: solid 5px;
   margin: 200px;
 }
 
@@ -23,4 +23,5 @@ input {
   height: 50px;
   background-color: khaki;
   font-size: 30px;
+  border: solid 2px;
 }

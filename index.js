@@ -22,7 +22,7 @@ if (nomeSalvato) {
 
 function startTimer() {
   let startTime = 0;
-  const savedTime = sessionStorage.getItem("timer");
+  const savedTime = localStorage.getItem("timer");
   if (savedTime) {
     startTime = parseInt(savedTime, 10);
   }
@@ -31,10 +31,9 @@ function startTimer() {
   const timerInterval = setInterval(function () {
     startTime++;
     timerElement.textContent = startTime + " secondi";
-    sessionStorage.setItem("timer", startTime.toString());
+    localStorage.setItem("timer", startTime.toString());
   }, 1000);
 
   timerElement.textContent = startTime + " secondi";
 }
-
 window.addEventListener("load", startTimer);
